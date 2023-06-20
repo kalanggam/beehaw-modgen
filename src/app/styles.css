@@ -3,15 +3,53 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@layer base {
+  /* 
+  code
+  ----
+  This component is used for displaying code
+  */
+  code {
+    @apply rounded-md bg-gray-300;
+  }
+}
+
+@layer components {
+  /*
+  nav-tab-list
+  ------------
+  This styles the container for navigation tabs
+  */
+  .nav-tab-list {
+    @apply p-1 bg-gray-300 rounded-3xl;
+  }
+  
+  /* 
+  nav-tab
+  -------
+  Styles navigation tabs
+  */
+  .nav-tab {
+    @apply p-3 rounded-3xl text-gray-600 text-xs
+    data-[state=active]:border 
+    data-[state=active]:border-gray-400
+    data-[state=active]:bg-gray-200
+    data-[state=active]:text-gray-900;
+  }
+
+  /* 
+  form-field
+  ----------
+  This component is used for displaying text boxes
+  */
+  .form-field {
+    @apply border border-gray-400 rounded-md px-1;
   }
 }
