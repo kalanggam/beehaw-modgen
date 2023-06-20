@@ -2,13 +2,10 @@
 // React
 import { useState } from "react";
 
-// Radix UI Primitives
-import * as Tabs from "@radix-ui/react-tabs";
-
 // Custom Components
-import ThreadForm from "../components/ThreadForm";
-import UserForm from "../components/UserForm";
-import CommunityForm from "../components/CommunityForm";
+import ThreadTab from "../components/ThreadTab";
+import UserTab from "../components/UserTab";
+import CommunityTab from "../components/CommunityTab";
 import CommunitySelector from "../components/CommunitySelector";
 import GeneratorTabs from "../components/GeneratorTabs";
 
@@ -34,17 +31,17 @@ export default function Home() {
             {
               value: "threadTab",
               name: "Threads",
-              content: <ThreadForm communityName="{communityName}" />,
+              content: <ThreadTab communityName="{communityName}" />,
             },
             {
               value: "userTab",
               name: "Users",
-              content: <UserForm communityName="{communityName}" />,
+              content: <UserTab communityName="{communityName}" />,
             },
             {
               value: "communityTab",
               name: "Communities",
-              content: <CommunityForm communityName="{communityName}" />,
+              content: <CommunityTab communityName="{communityName}" />,
             },
           ]}
         />
