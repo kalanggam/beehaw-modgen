@@ -6,7 +6,7 @@ export default function CommunitySelector(props: {
 }) {
   // TODO Replace with an actual dropdown menu
   return (
-    <div className="my-4 text-center flex flex-row items-end justify-center">
+    <div className="mb-4 text-center flex flex-row items-end justify-center">
       <span className="font-mono">!</span>
       <div className="text-left">
         <label
@@ -26,9 +26,8 @@ export default function CommunitySelector(props: {
             props.onCommunityNameChange(e.target.value)
           }
           value={props.communityName}
-        />{" "}
-        
-        
+          autoFocus
+        />
       </div>
       <span className="font-mono">@beehaw.org</span>
     </div>

@@ -11,13 +11,17 @@
 }
 
 @layer base {
-  /* 
-  code
-  ----
-  This component is used for displaying code
-  */
+  h1 {
+    @apply text-3xl font-light;
+  }
+  h2 {
+    @apply font-light text-2xl;
+  }
+  h3 {
+    @apply text-lg font-bold;
+  }
   code {
-    @apply rounded-md bg-gray-300;
+    @apply rounded-md bg-gray-200 whitespace-pre-wrap;
   }
 }
 
@@ -28,20 +32,20 @@
   This styles the container for navigation tabs
   */
   .nav-tab-list {
-    @apply p-1 bg-gray-300 rounded-3xl;
+    @apply rounded-md bg-gray-200 p-1;
   }
-  
+
   /* 
   nav-tab
   -------
   Styles navigation tabs
   */
   .nav-tab {
-    @apply p-3 rounded-3xl text-gray-600 text-xs
-    data-[state=active]:border 
-    data-[state=active]:border-gray-400
-    data-[state=active]:bg-gray-200
-    data-[state=active]:text-gray-900;
+    @apply p-3 rounded-md text-gray-600 text-xs
+      data-[state=active]:border 
+      data-[state=active]:border-gray-300
+      data-[state=active]:bg-gray-100
+      data-[state=active]:text-gray-900;
   }
 
   /* 
@@ -50,6 +54,8 @@
   This component is used for displaying text boxes
   */
   .form-field {
-    @apply border border-gray-400 rounded-md px-1;
+    @apply border border-gray-400 rounded-md px-1
+      focus:outline-none focus:ring-4 focus:border-gray-400
+      hover:ring-2 hover:ring-offset-1 hover:border-gray-400;
   }
 }
