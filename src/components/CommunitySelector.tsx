@@ -6,7 +6,7 @@ export default function CommunitySelector(props: {
 }) {
   // TODO Replace with an actual dropdown menu
   return (
-    <div className="my-5 text-center">
+    <div className="my-4 text-center">
       <label
         className="text-gray-900 font-normal text-xs align-[1px]"
         htmlFor="community"

@@ -28,7 +28,7 @@ export default function GeneratorTabs(props: {
 
   const tabsContent = props.rows.map((row) => (
     <>
-      <Tabs.TabsContent className="p-5" value={row.value}>
+      <Tabs.TabsContent className="p-4" value={row.value}>
         {row.content}
       </Tabs.TabsContent>
     </>
