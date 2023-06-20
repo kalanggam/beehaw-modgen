@@ -30,14 +30,16 @@ export default function ThreadGenSwitcher(props: {
         id="thread-gen-select"
         onChange={selectChange}
         defaultValue="ThreadMerge"
+        className="form-field font-sans text-md bg-white"
       >
+        <option className="italic" value="" disabled>Select a generator</option>
         <option value="ThreadMerge">Merge thread</option>
         <option value="ThreadLock">Lock thread</option>
         <option value="ThreadRemove">Remove thread</option>
         <option value="CommentRemove">Remove comment</option>
       </select>
       
-      <div>{currentGen && <em>{getGenerator(currentGen)}</em>}</div>
+      <div>{currentGen && getGenerator(currentGen)}</div>
     </div>
   );
 }

@@ -1,4 +1,5 @@
 "use client";
+
 // React
 import { useState } from "react";
 
@@ -50,7 +51,7 @@ export default function Home() {
         <div>version 0.1</div>
         <div>|</div>
         <div>
-          created with <span className="not-italic">❤️</span> by gil
+          created with ❤️ by gil
         </div>
       </footer>
     </main>
