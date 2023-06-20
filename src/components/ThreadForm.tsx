@@ -20,7 +20,8 @@ export default function ThreadForm(props: { communityName: string }) {
       &nbsp;
       <div className="bg-gray-700 text-white p-2 rounded-md">
         <code>
-          Howdy! We&apos;re wrangling other threads about this topic into this hive.
+          Howdy! We&apos;re wrangling other threads about this topic into this
+          hive.
           <br />
           * [**Post 1**](post_link) by [**user@instance**](user_link)
           <br />

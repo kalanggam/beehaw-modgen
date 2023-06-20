@@ -19,7 +19,9 @@ export default function CommunitySelector(props: {
         className="font-mono border rounded-md px-1 mr-1 border-gray-400 w-[16ch]"
         id="community"
         name="community"
-        onChange={(e: React.ChangeEvent<HTMLInputElement>) => props.onCommunityNameChange(e.target.value)}
+        onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+          props.onCommunityNameChange(e.target.value)
+        }
         value={props.communityName}
       />
       <code>@beehaw.org</code>

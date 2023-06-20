@@ -13,7 +13,7 @@ import CommunitySelector from "../components/CommunitySelector";
 import GeneratorTabs from "../components/GeneratorTabs";
 
 export default function Home() {
-  const [communityName, setCommunityName] = useState("support");
+  const [communityName, setCommunityName] = useState<string>("support");
 
   return (
     <main className="flex flex-col w-full place-items-center p-10">
@@ -27,7 +27,7 @@ export default function Home() {
           communityName={communityName}
           onCommunityNameChange={setCommunityName}
         />
-        
+
         <GeneratorTabs
           defaultValue="threadTab"
           rows={[

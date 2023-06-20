@@ -1,5 +1,5 @@
 // React
-import React, { Children } from "react";
+import React from "react";
 
 // Radix UI Primitives
 import * as Tabs from "@radix-ui/react-tabs";
