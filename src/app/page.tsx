@@ -31,17 +31,17 @@ export default function Home() {
             {
               value: "threadTab",
               name: "Threads",
-              content: <ThreadTab communityName="{communityName}" />,
+              content: <ThreadTab communityName={communityName} />,
             },
             {
               value: "userTab",
               name: "Users",
-              content: <UserTab communityName="{communityName}" />,
+              content: <UserTab communityName={communityName} />,
             },
             {
               value: "communityTab",
               name: "Communities",
-              content: <CommunityTab communityName="{communityName}" />,
+              content: <CommunityTab communityName={communityName} />,
             },
           ]}
         />
