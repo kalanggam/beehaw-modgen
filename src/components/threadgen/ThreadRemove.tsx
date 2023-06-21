@@ -29,9 +29,7 @@ export default function ThreadRemove(props: { communityName: string }) {
         Howdy! We&apos;re removing this thread
         {(removeReason && (
           <>
-            &nbsp;with the following reason:
-            <br />
-            &gt; *{removeReason}*
+            &nbsp;for {removeReason}.
             <br />
             <br />
             If you have any questions or concerns about this action, please
