@@ -57,7 +57,7 @@ export default function ThreadMerge(props: { communityName: string }) {
         <br />
         <br />
         Thank you and **Beehaw!**&nbsp;&nbsp;
-        <br />— [!{props.communityName}@beehaw.org](!{props.communityName}
+        <br />— [!{props.communityName}@beehaw.org](/c/{props.communityName}
         @beehaw.org) Moderation Team
       </code>
       <div className="flex flex-row sm:justify-center">
@@ -85,7 +85,7 @@ export default function ThreadMerge(props: { communityName: string }) {
         <br />
         <br />
         Thank you and **Beehaw!**&nbsp;&nbsp;
-        <br />— [!{props.communityName}@beehaw.org](!{props.communityName}
+        <br />— [!{props.communityName}@beehaw.org](/c/{props.communityName}
         @beehaw.org) Moderation Team
       </code>
     </div>

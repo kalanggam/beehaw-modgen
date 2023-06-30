@@ -47,7 +47,7 @@ export default function ThreadRemove(props: { communityName: string }) {
         <br />
         <br />
         Thank you,&nbsp;&nbsp;
-        <br />— [!{props.communityName}@beehaw.org](!{props.communityName}
+        <br />— [!{props.communityName}@beehaw.org](/c/{props.communityName}
         @beehaw.org) Moderation Team
       </code>
     </div>
