@@ -50,8 +50,8 @@ export default function ThreadMerge(props: { communityName: string }) {
         </div>
       </div>
       <code className="block p-2">
-        Howdy! To help wrangle this topic and keep the hive clean, we&apos;ll be locking this
-        thread. We encourage you to direct new discussion to [this&nbsp;
+        Howdy! To help wrangle this topic and keep the hive clean, we&apos;ll be
+        removing this thread. We encourage you to direct new discussion to [this{" "}
         {isMegathread && "mega"}thread](
         {(destThread && destThread) || <>https://beehaw.org/post/######</>}).
         <br />
